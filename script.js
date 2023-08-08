@@ -74,7 +74,7 @@ function precedent(){
         }
     }
     else {
-        alert("aem");
+        i--;
     }
 }
 
