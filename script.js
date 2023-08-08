@@ -70,7 +70,7 @@ function precedent(){
         image.src = infos[i].image;
         i--;
         if (i<0){
-            i = 0;
+            i = 4;
         }
     }
     else {
