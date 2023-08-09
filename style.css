@@ -24,7 +24,7 @@ body{
 }
 
 #img{
-    width: 200px;
+    width: 50%;
     border-radius: 50%;
 }
 
@@ -40,7 +40,7 @@ body{
 }
 
 #fleche img{
-    width: 80px;
+    width: 25%;
     cursor: pointer;
 }
 
@@ -49,6 +49,8 @@ body{
     background: lightskyblue;
     border-radius: 30px;
     cursor: pointer;
+    width : 25%;
+
 }
 
 
