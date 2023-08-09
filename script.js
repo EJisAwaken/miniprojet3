@@ -64,17 +64,14 @@ function suivant(){
 
 function precedent(){
     if (i<infos.length){
-        bio.innerText = infos[i].bio;
-        work.innerText = infos[i].work;
-        name.innerText = infos[i].name;
-        image.src = infos[i].image;
+        bio.innerText = infos[i-1].bio;
+        work.innerText = infos[i-1].work;
+        name.innerText = infos[i-1].name;
+        image.src = infos[i-1].image;
         i--;
         if (i<0){
-            i = 0;
+            i = 4;
         }
-    }
-    else {
-        alert("aem");
     }
 }
 
