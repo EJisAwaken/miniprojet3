@@ -40,7 +40,7 @@ let infos = [
 
 ];
 
-let i = 1;
+let i = 0;
 
 window.addEventListener("load", ()=>{
     bio.innerText = infos[0].bio;
@@ -50,13 +50,16 @@ window.addEventListener("load", ()=>{
 })
 
 function suivant(){
-    if (i<infos.length){
+    if (i<infos.length-1){
+        i++;
         bio.innerText = infos[i].bio;
         work.innerText = infos[i].work;
         name.innerText = infos[i].name;
         image.src = infos[i].image;
-        i++;
+
+
     }
+
     else {
         i=0;
     }
@@ -64,16 +67,18 @@ function suivant(){
 
 function precedent(){
     if (i<infos.length){
-        bio.innerText = infos[i-1].bio;
-        work.innerText = infos[i-1].work;
-        name.innerText = infos[i-1].name;
-        image.src = infos[i-1].image;
         i--;
-        if (i<0){
+        bio.innerText = infos[i].bio;
+        work.innerText = infos[i].work;
+        name.innerText = infos[i].name;
+        image.src = infos[i].image;
+
+        if (i<1){
             i = 4;
         }
     }
 }
+
 
 function suprise(){
     let random = Math.floor(Math.random()*infos.length);
